@@ -31,9 +31,10 @@ body{
     background-color: var(--hijau);
     color: var(--putih);
     cursor: pointer;
-    /*position: sticky;*/
     position: fixed;
+    transition: top 0.5s;
     width: 100%;
+    z-index: 10;
 }
 
 .nav-list{
@@ -82,12 +83,12 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     align-content: center;
-    padding-top: 5rem;
     padding-bottom: 5rem;
     margin-bottom: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10rem;
     padding-left: 4rem;
     padding-right: 9rem;
     box-shadow: 0px 18px 80px var(--hijau-tua);
@@ -144,8 +145,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     align-content: center;
-    padding-bottom: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     margin-bottom: 5rem;
+    
 }
 
 .tentang-landing h2{
@@ -237,6 +240,7 @@ body{
     align-content: center;
     padding-bottom: 5rem;
     margin-bottom: 5rem;
+    padding-top: 0rem;
 }
 
 .layanan-landing h2{
@@ -390,8 +394,11 @@ body{
 }
 
 .form-kontak img{
-    width: 500px;
-    height: 500px;
+    position: absolute;
+    right: 50px;
+    top: 110%;
+    width: 600px;
+    height: 600px;
 }
 
 .hub-melalui{
@@ -400,6 +407,7 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 
 .hub-melalui h2{
     text-align: center;
