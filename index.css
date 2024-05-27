@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-besar: 3rem;
+    --hijau: #06A156;
+    --hijau-tua: #00371D;
+    --putih: #FFFFFF;
+    --kuning: #FFEB39;
+    --biru: #1CBDC7;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    height:  100px;
+    background-color: var(--hijau);
+    color: var(--putih);
+    cursor: pointer;
+    /*position: sticky;*/
+    position: fixed;
+    width: 100%;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.navbar h2{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.navbar ul{
+    list-style: none;
+    align-self: center;
+    width: auto;
+}
+
+.navbar ul li{
+    display: inline;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--putih);
+    margin-left: 3rem ;
+    font-size: 1.25rem;
+}
+
+.navbar ul li a:hover{
+    color: var(--kuning);
+}
+
+.navbar a img{
+    height: 45px;
+    width: 45px;
+    margin-left: 3rem;
+}
+
+/* beranda  */
+.beranda-landing{
+    background: url(image/beranda/bg1.png);
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 9rem;
+    box-shadow: 0px 18px 80px var(--hijau-tua);
+}
+
+.beranda-landing img{
+    width: 600px;
+    height: 600px;
+}
+
+.beranda-konten h2{
+    font-size: var(--text-besar);
+    color: var(--putih);
+}
+
+.beranda-konten p{
+    font-size: 1.25rem;
+    color: var(--putih);
+    font-weight: 500;
+}
+
+.beranda-konten button{
+    border: 4px solid var(--hijau);
+    background-color: var(--hijau);
+    color: var(--putih);
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.beranda-konten button:hover{
+    background-color: transparent;
+    border: 4px solid var(--putih);
+}
+
+.beranda-hover{
+    margin: 5rem 0;
+}
+
+.beranda-hover img{
+    width: 100%;
+}
+
+/* tentang  */
+.tentang-landing{
+    background: url(image/tentang/bg-tentang.png),
+    linear-gradient(to bottom, var(--biru), #fff9c0 ,var(--putih));
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+}
+
+.tentang-landing h2{
+    font-size: 3rem;
+    color: var(--putih);
+    text-align: center;
+    text-shadow: 2px 2px 30px rgba(96, 96, 96, 0.5);
+}
+
+.tentang-kami{
+    display: flex;
+    padding: 0 5rem;
+    margin: 10rem 0;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tentang-kami img{
+    width: 250px;
+}
+
+.tentang-kami p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 40%;
+}
+
+.tujuan{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: rgba(255, 235, 57, 0.5);
+    padding: 3rem 5rem;
+    margin-right: 5rem;
+}
+
+.tujuan span{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#tuj{
+    color: var(--biru);
+}
+
+#gren{
+    color: var(--hijau);
+}
+
+.tujuan p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.tentang-btn{
+    margin: 9rem 0;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tentang-btn button{
+    border: 4px solid var(--hijau);
+    background-color: var(--hijau);
+    color: var(--putih);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.tentang-btn button:hover{
+    background-color: var(--putih);
+    color: var(--hijau);
+}
+
+/* layanan  */
+.layanan-landing{
+    background: url(image/layanan/bg1-layanan.png),
+    linear-gradient(to bottom, var(--putih), var(--biru));
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+}
+
+.layanan-landing h2{
+    font-size: 3rem;
+    color: var(--hijau-tua);
+    text-align: center;
+}
+
+.layanan{
+    padding: 5rem 0;
+}
+.layanan-left h3{
+    padding: 0 5rem;
+    font-size: 2.25rem;
+    color: var(--hijau-tua);
+}
+
+.layanan-konten{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: linear-gradient(to right,rgba(28,189,199,0.5), rgba(255,245,151,0.5));
+    display: flex;
+    padding: 2rem 5rem;
+    margin-right: 5rem;
+    align-items: center;
+    gap: 7rem;
+}
+
+.layanan-konten img{
+    width: 500px;
+}
+
+.layanan-konten p{
+    font-size: 1.5rem;
+}
+
+#layanan2{
+    padding: 8rem 0;
+}
+
+#layanan2 h3{
+    text-align: right;
+}
+
+#layanan-konten2{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: linear-gradient(to right,rgba(164,250,255,0.5), rgba(6,161,86,0.5));
+    display: flex;
+    padding: 2rem 5rem;
+    margin-left: 5rem;
+    margin-right: 0;
+    align-items: center;
+    gap: 7rem;
+}
+
+#layanan3{
+    background: linear-gradient(to right,rgba(255,244,141,0.5), rgba(6,161,86,0.5));
+}
+
+/* kontak  */
+.kontak-kami{
+    display: flex;
+    justify-content: center;
+    padding: 0 5rem;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.kontak-kami img{
+    height: 578px;
+}
+
+.kontak-kami div{
+    display: flex;
+    flex-direction: column;
+    color: var(--hijau-tua);
+}
+
+.kontak-kami div h2{
+    font-size: var(--text-besar);
+}
+
+.kontak-kami div p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.form-kontak{
+    margin: 5rem 11rem;
+    /* border: solid 1px black; */
+    border-radius: 20px;
+    padding: 3.5rem;
+    box-shadow: 4px 4px 20px rgb(152, 151, 151);
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-kontak div{
+    align-content: center;
+}
+
+.form-kontak div h2{
+    font-size: var(--text-besar);
+    color: var(--hijau-tua);
+}
+
+.form-kontak div form{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    gap: 1.5rem;
+}
+
+.form-kontak div form input{
+    height: 4rem;
+    background-color: rgba(28, 189, 199, 0.4);
+    border: none;
+    border-radius: 30px;
+    padding: 0 2rem;
+}
+
+.form-kontak div form .msg{
+    height: 10rem;
+}
+
+.form-kontak div form input::placeholder{
+    font-size: 1.25rem;
+    color: var(--hijau);
+    /* align-items: start; */
+}
+
+.form-kontak div form button{
+    background-color: var(--hijau);
+    color: var(--putih);
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 4rem;
+    border: none;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.form-kontak div form button:hover{
+    background-color: var(--putih);
+    border: 4px solid var(--hijau);
+    color: var(--hijau);
+    cursor: pointer;
+}
+
+.form-kontak img{
+    width: 500px;
+    height: 500px;
+}
+
+.hub-melalui{
+    padding: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hub-melalui h2{
+    text-align: center;
+    font-size: var(--text-besar);
+    color: var(--hijau-tua);
+}
+
+.kontak-card{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.kontak-card1{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card-kontak{
+    box-shadow: 4px 4px 20px rgb(152, 151, 151);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+#card-kontak2{
+    flex-direction: column;
+}
+
+.card-kontak img{
+    width: 160px;
+    height: 160px;
+}
+
+.card-kontak-konten{
+    gap: 1rem;
+}
+
+.card-kontak-konten h4{
+    font-size: 2.25rem;
+    color: var(--hijau);
+}
+
+.card-kontak-konten p{
+    color: var(--hijau);
+    font-size: 1.5rem;
+}
+
+.card-kontak-konten img{
+    width: 50px;
+    height: 50px;
+}
+
+#sos{
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* footer  */
+.footer{
+    margin-top: 5rem;
+    display: flex;
+    padding: 3rem 5rem;
+    background-color: var(--hijau);
+    justify-content: space-between;
+    color: var(--putih);
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#left{
+    width: 400px;
+}
+
+.foot h2{
+    font-style: italic;
+    font-size: 4rem;
+}
+
+.foot p{
+    font-size: 1rem;
+}
+
+.foot a{
+    text-decoration: none;
+    color: var(--putih);
+}
+
+#mid{
+    padding-top: 1rem;
+}
+
+#mid p:hover{
+    color: var(--kuning);
+}
+
+.foot h4{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+#right{
+    padding-top: 1rem;
+}
+
+#right p:hover{
+    color: var(--kuning);
+}
+
+.foot-kontak{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.foot-kontak img{
+    width: 1.4rem;
+    height: 1.1rem;
+}
+
+.foot-sosmed img{
+    width: 2.5rem;
+}
