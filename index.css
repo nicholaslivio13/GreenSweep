@@ -196,7 +196,12 @@ body{
     font-size: 1em;
     color: white;
     font-weight: 500;
-    
+}
+
+.button .btn:hover{
+    border: 3px solid var(--hijau);
+    background-color: transparent;
+    color: var(--hijau);
 }
 
 .register-login {
@@ -241,6 +246,10 @@ body{
     font-size: 1em;
     color: #06A156;
     font-weight: 500;
+}
+
+.register-login .btn:hover{
+    background-color: var(--putih);
 }
 
 /* beranda  */
@@ -723,6 +732,8 @@ body{
     padding-left: 2rem;
     font-size: 2.35rem;
     font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 /* .misi-konten{
