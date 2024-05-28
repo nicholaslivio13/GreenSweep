@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 *{
     margin: 0;
@@ -72,6 +73,174 @@ body{
     height: 45px;
     width: 45px;
     margin-left: 3rem;
+}
+
+/* login  */
+.login-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 5rem;
+    background-color: #f0f0f0; /* Background color for better visibility */
+}
+
+.wrapper {
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between; /* Distribute space between child elements */
+    align-items: center;
+    overflow: hidden;
+    margin: 5rem;
+}
+
+.form-box {
+    flex: 2; /* Allow form-box to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.text{
+    align-self: flex-start;
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left within .form-box */
+}
+
+.text h2{
+    font-size: 36px;
+    color: #06A156;
+}
+
+.text h3{
+    font-size: 18px;
+    color: rgb(6, 161, 86, 0.3);
+    margin-bottom: 30px;
+    font-weight: 500px;
+}
+
+.input-box {
+    position: relative; /* Positioning context for absolute positioning */
+    margin-bottom: 20px; /* Add space between input boxes */
+}
+
+.input-box input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #9ECC7A;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.input-box label {
+    font-size: 16px;
+    color: #06A156;
+    position: absolute;
+    top: -25px; /* Adjust as needed to position the label above the input box */
+    /* left: 10px; Adjust as needed to position the label within the input box */
+    left: 0px;
+    padding: 0 5px;
+}
+
+.remember-forgot{
+    width: 90%;
+    font-size: 0.9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label{
+    color: #9ECC7A;
+    margin-right: 3px;
+}
+
+.remember-forgot label input{
+    accent-color: #9ECC7A;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #CC7A7A;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.button .btn{
+    justify-content: center;
+    width: 40%;
+    height: 45px;
+    background: #06A156;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.register-login {
+    border-radius: 20px;
+    flex: 1.75;
+    background-color: rgb(6, 161, 86, 0.3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.register-login h2{
+    font-size: 36px;
+    color: rgb(0, 62, 66, 0.8);
+}
+
+.register-login h3{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.garbage-character{
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.register-login .btn{
+    justify-content: center;
+    width: 40%;
+    height: 45px;
+    background: transparent;
+    border: 3px solid #06A156;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1em;
+    color: #06A156;
+    font-weight: 500;
 }
 
 /* beranda  */
@@ -153,7 +322,7 @@ body{
 
 .tentang-landing h2{
     font-size: 3rem;
-    color: var(--putih);
+    color: var(--hijau-tua);
     text-align: center;
     text-shadow: 2px 2px 30px rgba(96, 96, 96, 0.5);
 }
@@ -240,7 +409,7 @@ body{
     align-content: center;
     padding-bottom: 5rem;
     margin-bottom: 5rem;
-    padding-top: 0rem;
+    padding-top: 10rem;
 }
 
 .layanan-landing h2{
@@ -310,6 +479,7 @@ body{
     padding: 0 5rem;
     align-items: center;
     column-gap: 80px;
+    padding-top: 5rem;
 }
 
 .kontak-kami img{
@@ -333,7 +503,6 @@ body{
 
 .form-kontak{
     margin: 5rem 11rem;
-    /* border: solid 1px black; */
     border-radius: 20px;
     padding: 3.5rem;
     box-shadow: 4px 4px 20px rgb(152, 151, 151);
@@ -537,4 +706,41 @@ body{
 
 .foot-sosmed img{
     width: 2.5rem;
+}
+
+.misi-konten{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: 120px;
+    background: #1CBDC7;
+    height: 445px;
+    width: 1016px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    font-size: 2.35rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* .misi-konten{
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    font-size: 2.35rem;
+    color: var(--putih);
+} */
+
+.misi span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#putih-misi{
+    color: #FFFFFF;
+}
+
+#kuning-misi{
+    color: #FFEB39;
 }
