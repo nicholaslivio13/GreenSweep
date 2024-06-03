@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenSweep | Register</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <h2>GreenSweep</h2>
+        <div class="nav-list">
+            <ul>
+                <li><a href="beranda.html" >Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="#">Tukar Poin</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <a href="login.html"><img src="image/navbar/profile.png" alt="profile"></a>
+        </div>
+    </nav>
+    <div class="login-body">
+        <div class="wrapper" id="wrap-regist">
+
+            <div class="register-login">
+                <h2>Selamat Datang !</h2>
+                <br>
+                <h3>Untuk tetap terhubung dengan kami, silakan login dengan informasi pribadi Anda !</h3>
+                <img src="image/register/sampah.png" alt="sampah-sampah" class="sampah-sampah">
+                <a href="login.html"><button type="submit" class="btn">Masuk</button></a>
+            </div>
+    
+            <div class="form-boxreg">
+                <div class="order">
+                    <h2>Buat Akun</h2>
+                    <h3>Daftarkan akun Anda disini</h3>
+                    
+                </div>
+    
+                <form action="#">
+                    <div class="form-group">
+                        <input type="fullname" required>
+                        <label>Nama Lengkap</label>
+                    </div>
+                    <div class="personal-group">
+                        <div class="form-group">
+                            <label for="birthday">Tanggal lahir</label>
+                            <input type="date" id="birthday" name="birthday" placeholder="dd/mm/yyyy">
+                        </div>
+        
+                        <div class="form-group">
+                            <label>Jenis kelamin</label> 
+                            <select>
+                                <option disabled selected>-- pilih</option>
+                                <option>laki-laki</option>
+                                <option>Perempuan</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label>Nomor telpon</label>
+                    </div>
+                      
+                    <div class="form-group">
+                        <input type="password" placeholder="********" required>
+                        <span class="show-password" onclick="togglePasswordVisibility('confirm-password')">👁</span>
+                        <label>Kata sandi</label>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="********">
+                        <span class="show-password" onclick="togglePasswordVisibility('confirm-password')">👁</span>
+                        <label>Konfirmasi kata sandi</label>
+                        
+                    </div>
+    
+                    <div class="sdank">
+                        <label><input type="checkbox">Saya setuju dengan Syarat dan Ketentuan</label>
+                        
+                    </div>
+                    <div class="button">
+                        <a href="beranda.html"><button type="submit" class="btn">Daftar</button></a>
+                    </div>
+                    
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+

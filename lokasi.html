@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <h2>GreenSweep</h2>
+        <div class="nav-list">
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="#" style="color: #FFEB39;">Tukar Poin</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+            <a href="login.html"><img src="image/navbar/profile.png" alt="profile"></a>
+        </div>
+    </nav>
+    <div class="header-sampah">
+        <h2>Pilih Lokasi Penjemputan</h2>
+        <div class="koin">
+            <img src="image/lokasi/koin.png" alt="coin image">
+            <h3>1000 poin</h3>
+        </div>
+    </div>
+
+    <div class="wrapper-location">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.874009703208!2d106.7822547!3d-6.2017585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcc7d2c4ad%3A0x209cb1eef39be168!2sUniversitas%20Bina%20Nusantara%20Kampus%20Anggrek!5e0!3m2!1sid!2sid!4v1716907347571!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="form-box">
+            <div class="form-img">
+                <img src="image/lokasi/location.png" alt="location img">
+            </div>
+
+            <div class="form-content">
+                <div class="form-questions">
+                    <form action="#">
+                        <div class="input-box-location">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="name" required placeholder="Nama">
+                        </div>
+                        <div class="input-box-location">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <input type="text" required placeholder="Nomor Telepon">
+                        </div>
+                        <div class="input-box-location">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <input type="location" required placeholder="Lokasi">
+                        </div>
+                        <div class="long-input-box-location">
+                            <input type="location" required placeholder="Keterangan Lokasi...">
+                        </div>
+                        <div class="button-location">
+                            <button type="submit" class="btn">Simpan</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-sampah">
+        <a href="tanggal.html"><button class="sebelumnya">Sebelumnya</button></a>
+        <a href=""><button class="selanjutnya">Selanjutnya ➜</button></a>
+    </div>
+
+</body>
+</html>

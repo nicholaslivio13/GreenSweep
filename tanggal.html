@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenSweep | Tanggal Penjemputan</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <nav class="navbar" id="navbar">
+            <h2>GreenSweep</h2>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="beranda.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="layanan.html">Layanan</a></li>
+                    <li><a href="#" style="color: #FFEB39;">Tukar Poin</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+                <a href="login.html"><img src="image/navbar/profile.png" alt="profile"></a>
+            </div>
+        </nav>
+        <div class="header-sampah">
+            <h2>Pilih Tanggal Penjemputan</h2>
+            <div class="koin">
+                <img src="image/jenisSampah/koin.png" alt="coin image">
+                <h3>1000 poin</h3>
+            </div>
+        </div>
+        <div class="calendar-section">
+            <div class="calendar">
+                <div class="calendar-header">
+                  <button id="prev">&lt;</button>
+                  <h2 id="monthYear"></h2>
+                  <button id="next">&gt;</button>
+                </div>
+                <div class="calendar-body">
+                  <div class="calendar-weekdays" id="calendarWeekdays">
+                    <div>Min</div>
+                    <div>Sen</div>
+                    <div>Sel</div>
+                    <div>Rab</div>
+                    <div>Kam</div>
+                    <div>Jum</div>
+                    <div>Sab</div>
+                  </div>
+                  <div class="calendar-days" id="calendarDays"></div>
+                </div>
+            </div>
+        </div>
+        <div class="selected-date" id="selectedDate">Tanggal Penjemputan: Belum terpilih</div>
+        
+        <div class="footer-sampah">
+            <a href="jenissampah.html"><button class="sebelumnya">Sebelumnya</button></a>
+            <a href="lokasi.html"><button class="selanjutnya">Selanjutnya ➜</button></a>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+

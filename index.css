@@ -75,6 +75,104 @@ body{
     margin-left: 3rem;
 }
 
+/* register  */
+#wrap-regist{
+    height: 110vh;
+}
+.form-boxreg {
+    flex: 2; /* Allow form-box to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.order{
+    align-self: flex-start;
+    margin-bottom: 10px;
+    text-align: left; /* Align text to the left within .form-box */
+}
+
+.order h2{
+    font-size: 36px;
+    color: #06A156;
+}
+
+.order h3{
+    font-size: 18px;
+    color: rgb(6, 161, 86, 0.3);
+    margin-bottom: 30px;
+    font-weight: 500px;
+}
+
+.form-group {
+    position: relative; /* Positioning context for absolute positioning */
+    margin-bottom: 20px; /* Add space between input boxes */
+    width: 100%;
+}
+
+.form-group select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #9ECC7A;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.personal-group{
+    display: flex;
+    width: 90%;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #9ECC7A;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #06A156;
+    position: absolute;
+    top: -25px; /* Adjust as needed to position the label above the input box */
+    /* left: 10px; Adjust as needed to position the label within the input box */
+    left: 0px;
+    padding: 0 5px;
+}
+
+.sdank{
+    width: 90%;
+    font-size: 0.9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sdank label{
+    color: #9ECC7A;
+    margin-right: 3px;
+}
+
+.sdank label input{
+    accent-color: #9ECC7A;
+    margin-right: 3px;
+}
+
+.sampah-sampah{
+    width: 280px;
+    height: auto;
+    margin: 2rem 0;
+}
+
+
 /* login  */
 .login-body{
     display: flex;
@@ -101,7 +199,7 @@ body{
     margin: 5rem;
 }
 
-.form-box {
+.form-box-login {
     flex: 2; /* Allow form-box to take up remaining space */
     display: flex;
     flex-direction: column;
@@ -185,7 +283,7 @@ body{
 
 .button .btn{
     justify-content: center;
-    width: 40%;
+    padding: 0 4rem;
     height: 45px;
     background: #06A156;
     border: none;
@@ -225,6 +323,7 @@ body{
     font-size: 18px;
     color: white;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .garbage-character{
@@ -233,9 +332,9 @@ body{
     margin-bottom: 20px;
 }
 
-.register-login .btn{
+.register-login button{
     justify-content: center;
-    width: 40%;
+    padding: 0 3rem;
     height: 45px;
     background: transparent;
     border: 3px solid #06A156;
@@ -248,7 +347,7 @@ body{
     font-weight: 500;
 }
 
-.register-login .btn:hover{
+.register-login button:hover{
     background-color: var(--putih);
 }
 
@@ -480,6 +579,639 @@ body{
 #layanan3{
     background: linear-gradient(to right,rgba(255,244,141,0.5), rgba(6,161,86,0.5));
 }
+
+/* tukar poin  */
+
+/* header koin */
+.header-sampah{
+    padding-top: 10rem;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-sampah h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 650;
+    width: 100%;
+}
+
+.header-sampah .koin{
+    width: 11rem;
+    position: absolute;
+    right: 2rem;
+    display: flex;
+    border: 5px solid #06A156;
+    border-radius: 50px;
+    padding-right: 1rem;
+}
+
+.koin{
+    justify-content: center;
+    align-items: center;
+}
+
+.koin img{
+    width: 50px;
+    height: auto;
+}
+
+/* jenis sampah  */
+
+.sampah-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.wrapper-left, .wrapper-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.sampah{
+    margin-bottom: 90px;
+    background-color: #06A156;
+    color: white;
+    padding: 20px;
+    padding-left: 80px;
+    width: 21vw;
+    border-radius: 40px;
+    cursor:pointer
+}
+
+.wrapper-left .sampah img{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: -120px;
+    margin-top: -50px;
+    /* top: 140px;
+    left: 300px; */
+}
+
+.wrapper-right .sampah img{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-120px);    margin-top: -50px;
+    /* top: 140px;
+    left: 300px; */
+}
+
+.sampah:hover{
+    background: linear-gradient(to right, #023B20, #06A156);
+}
+
+/* footer selanjutnya  */
+
+.footer-sampah{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.footer-sampah button{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: #FFEB39;
+    font-size: 20px;
+    font-weight: 600;
+    color: #06A156;
+    cursor: pointer;
+    justify-content: center;
+}
+
+/* tanggal  */
+.calendar-section{
+    justify-content: center;
+    display: flex;
+    /* flex-direction: column; */
+    /* padding: 0 5rem; */
+    margin-bottom: 2rem;
+}
+
+.calendar {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: var(--hijau);
+    color: #fff;
+}
+
+.calendar-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+  .calendar-header h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .calendar-body {
+    padding: 10px;
+  }
+  .calendar-weekdays {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1rem; */
+  }
+  .calendar-weekdays div,
+  .calendar-days div {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .calendar-days {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .calendar-days div {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  .calendar-days div:hover {
+    background: #ddd;
+  }
+  .calendar-days .selected {
+    background: #333;
+    color: #fff;
+  }
+  .selected-date {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .calendar {
+      width: 90%;
+    }
+  }
+
+/* lokasi  */
+.wrapper-location{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
+
+.map{
+    margin-top: 50px;
+}
+.map iframe{
+    overflow: hidden;
+    border-radius: 30px;
+    max-width: 500px;
+    height: 700px;
+}
+
+.form-box{
+    position: relative;
+    height: 700px;
+}
+
+.form-content{
+    margin-top: 220px;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 2rem;
+}
+
+.input-box-location{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.input-box-location input{
+    background-color: rgba(28, 189, 199, 0.15);
+    border: none;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+}
+
+.input-box-location input::placeholder{
+    color: #06A156;
+
+}
+
+ion-icon{
+    margin-top:12px;
+    margin-left: 15px;
+    position: absolute;
+    align-items: center;
+    color: #06A156;
+}
+
+.input-box-location input{
+    width: 22vw;
+}
+
+.long-input-box-location input {
+    background-color: rgba(28, 189, 199, 0.15);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 22vw;
+    align-items: flex-start;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    height: 70px;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.long-input-box-location input::placeholder{
+    color: #06A156;
+    vertical-align: top;
+    align-items: top;
+    margin-top: 0px;
+}
+
+.form-img{
+    position: absolute;
+    z-index: 1;
+    transform: translateX(30px);    
+    margin-top: 20px;
+}
+
+.button-location button{
+    width: 22vw;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    color: white;
+    background-color: #06A156;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* blog  */
+.judul{
+    padding-top: 5rem;
+    background-image: linear-gradient(to top, rgba(255, 235, 57, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+.wrapper-blog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.wrapper-blog img{
+    width: 700px;
+    height: auto;
+}
+
+.content-judul{
+    /* flex: 1; */
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-judul h2{
+    margin-bottom: 75px;
+    font-size: 48px;
+    color: rgb(0, 55, 29);
+}
+
+.box-content{
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+}
+
+.box-content p{
+    font-weight: 600;
+    font-size: 24px;
+    font-family: "Outfit", sans-serif;
+}
+
+.berita h2{
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: rgb(0, 55, 29);
+}
+
+.berita-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(28, 189, 189, 0.15);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.0);
+    /* width: 100%;  */
+    width: 620px;
+    height: 283px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.berita-wrapper:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.sampah-organik{
+    width: 284px;
+    height: auto;
+    margin: 20px;
+}
+
+.berita-text-wrapper h4{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: rgb(0, 55, 29);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.berita-judul{
+    text-decoration: none;
+    color: rgb(0, 55, 29);
+    transition: 0.3s;
+}
+
+.berita-judul:hover{
+    color: var(--biru);
+}
+
+.desc{
+    display: inline;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    color: rgb(0, 55, 29);
+}
+
+
+.tanggal{
+    display: inline-block;
+    font-size: 16px;
+    text-align: right;
+    margin-left: 40px;
+    color: rgb(0, 55, 29);
+}
+
+.berita-desc-date {
+    margin-bottom: 20px;
+}
+
+.wrapper-berita{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 180px;
+    padding-right: 140px;
+    padding-left: 140px;
+    padding-bottom: 180px;
+}
+
+.toa{
+    width: 438px;
+    height: auto;
+}
+
+.berita-terbaru {
+    background-image: linear-gradient(to top, rgba(87, 227, 160, 0.28), rgba(87, 227, 160, 0.28));
+}
+
+.berita-terbaru h2 {
+    color: rgb(0, 55, 29);
+    font-size: 36px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: "Outfit", sans-serif;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.card-berita-wrapper {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    max-width: 314px;
+    min-height: 494px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 1rem;
+}
+
+.card-berita-wrapper:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* .card-berita-wrapper:first-child {
+    margin-left: 30px;
+}
+
+.card-berita-wrapper:last-child {
+    margin-right: 30px;
+} */
+
+.card-berita-wrapper img {
+    width: 283px;
+    height: auto;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 18px;
+}
+
+.card-berita-text-wrapper {
+    color: rgb(0, 55, 29);
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 22px;
+}
+
+
+.card-berita-text-wrapper h4 {
+    font-size: 24px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-berita-desc-date .desc p {
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.card-berita-desc-date .date {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+
+.berita-lainnya h2{
+    color: rgb(0, 55, 29);
+    font-size: 36px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: "Outfit", sans-serif;
+}
+
+.card-berita-lainnya-wrapper {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(6, 161, 86);
+    border-radius: 10px;
+    min-width: 536px;
+    min-height: 272px;
+    width: 100%; 
+    margin: 15px;
+}
+
+.card-berita-lainnya-wrapper:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-berita-lainnya-wrapper img{
+    width: 241px;
+    height: 232px;
+    /* justify-content: center; */
+    margin: 20px;
+}
+
+.card-berita-lainnya-text-wrapper{
+    margin-right: 20px;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
+    color: rgb(0, 55, 29);
+    font-family: "Outfit", sans-serif;
+    position: relative;
+}
+
+.card-berita-lainnya-text-wrapper h4{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: rgb(0, 55, 29);
+    padding-bottom: 5px;
+}
+
+
+.lainnya-desc{
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    color: rgb(0, 55, 29);
+    font-weight: 300;
+    /* padding-bottom: 5px; */
+}
+
+.lainnya-date {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    color: rgb(0, 55, 29);
+    font-weight: 300;
+    position: absolute;
+    bottom: 20px;
+}
+
+.overflow-berita-lainnya{
+    max-width: 1112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-card-berita-lainnya{
+    display: flex;
+    justify-content: space-between;
+    gap: 38px;
+    overflow-x: hidden;
+}
+
+#flex-1 {
+    margin-bottom: 50px;
+}
+
+#flex-2 {
+    margin-bottom: 100px;
+}
+
 
 /* kontak  */
 .kontak-kami{
@@ -728,24 +1460,23 @@ body{
     width: 1016px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 1.5rem;
-    padding-left: 2rem;
+    padding: 2rem 4rem;
     font-size: 2.35rem;
     font-family: 'Outfit', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* font-size: 2.5rem;
+    font-weight: 600; */
 }
 
-/* .misi-konten{
-    padding-top: 1.5rem;
-    padding-left: 2rem;
-    font-size: 2.35rem;
-    color: var(--putih);
-} */
+.desc-misi-konten{
+    padding-bottom: 50px;
+}
 
-.misi span{
-    font-size: 2rem;
-    font-weight: bold;
+.misi-konten span{
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 #putih-misi{
@@ -754,4 +1485,84 @@ body{
 
 #kuning-misi{
     color: #FFEB39;
+}
+
+.misi-konten p{
+    color:#FFFFFF;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.misi-konten button{
+    width: 518px;
+    height: 63px;
+    border: 4px solid #FFEB39;
+    background-color: #FFEB39;
+    color: #06A156;
+    font-size: 1.40rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.misi-konten button:hover{
+    background-color: transparent;
+    border: 4px solid #FFEB39;
+    color: #FFEB39;
+}
+
+.layanan-kami {
+    text-align: center;
+    color: var(--hijau-tua);
+    font-weight: 600;
+    /* padding-top: 10rem; */
+    padding: 10rem 5rem;
+    justify-content: space-between;
+}
+
+.layanan-kami h2{
+    font-size: 2.25rem;
+}
+
+.container-layanan-kami{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-layanan{
+    border-radius: 30px;
+    margin-top: 100px;
+    height: 427px;
+    width: 316px;
+    padding: 2rem 4rem;
+    font-size: 2.35rem;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    text-align: center;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.card-layanan h2{
+    font-size: 2rem;
+}
+
+#card1-layanan{
+    border: 7px solid var(--kuning);
+    background: linear-gradient(to bottom, rgba(255,235,57,0.5),rgb(255,235,57));
+}
+
+#card2-layanan{
+    border: 7px solid var(--hijau);
+    background: linear-gradient(to bottom, rgba(6,161,86,0.5),rgb(6,161,86));
+}
+
+#card3-layanan{
+    border: 7px solid var(--biru);
+    background: linear-gradient(to bottom, rgba(28,189,199,0.5),rgb(28,189,199));
 }
