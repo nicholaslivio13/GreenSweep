@@ -695,7 +695,7 @@ body{
     border: none;
     background-color: #FFEB39;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: g600;
     color: #06A156;
     cursor: pointer;
     justify-content: center;
@@ -1568,6 +1568,10 @@ ion-icon{
 }
 
 .card-layanan h2{
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
 }
 
@@ -1584,4 +1588,103 @@ ion-icon{
 #card3-layanan{
     border: 7px solid var(--biru);
     background: linear-gradient(to bottom, rgba(28,189,199,0.5),rgb(28,189,199));
+}
+
+.card-layanan p{
+    position: absolute;
+    opacity: 0;
+    transition: 0.3;
+}
+
+.card-layanan img{
+    position: absolute;
+    opacity: 0;
+    transition: 0.3;
+}
+
+.card-layanan:hover h2{
+    z-index: -1;
+    display: none;
+}
+
+.card-layanan:hover p{
+    margin-top: 50px;
+    margin-left: -20px;
+    font-size: 20px;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+}
+
+.card-layanan:hover img{
+    margin-top: -450px;
+    margin-left: -50px;
+    font-size: 20px;
+    height: auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+}
+
+.beranda-body{
+    background: url(./image/beranda/bg.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.tentang-body{
+    background: url(./image/tentang/bg.png);
+    background-repeat: none;
+    background-size: cover; 
+}
+
+.layanan-body{
+    background: url(./image/layanan/bg.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.kontak-body{
+    background: url(./image/kontak/bg.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.login-bg{
+    background: url(./image/jenisSampah/bg.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.sampah-bg{
+    background: url(./image/jenisSampah/bg.png);
+    background-repeat: none;
+    background-size: cover;
+}
+
+/* terimakasih page  */
+.terimakasih-bg{
+    background: url('image/terimakasih/confetti.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.terimakasih-section{
+    justify-content: center;
+    display: flex;
+}
+
+.terimakasih-section img{
+    width: 800px;
+}
+
+#terimakasih-btn{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
