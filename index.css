@@ -50,6 +50,23 @@ body::-webkit-scrollbar {
     font-style: italic;
 }
 
+.logo-navbar{
+    display: flex;
+    gap: 1rem;
+}
+
+.logo-navbar h2{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.logo-navbar img{
+    height: 3rem;
+    background: var(--putih);
+    border-radius: 50%;
+}
+
+
 .navbar ul{
     list-style: none;
     align-self: center;
@@ -445,9 +462,25 @@ body::-webkit-scrollbar {
 
 .tentang-landing h2{
     font-size: 3rem;
-    color: var(--hijau-tua);
+    color: var(--putih);
     text-align: center;
-    text-shadow: 2px 2px 30px rgba(96, 96, 96, 0.5);
+    text-shadow: 0px 0px 50px rgba(0, 55, 29,1);
+}
+
+.tentang-kementrian{
+    background: rgb(6, 161, 86, 0.3);
+    padding: 5rem 5rem;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.tentang-kementrian img{
+    width: 30%;
+}
+
+.tentang-kementrian p{
+    font-size: 1.5rem
 }
 
 .tentang-kami{
@@ -691,9 +724,11 @@ body::-webkit-scrollbar {
 }
 
 .footer-sampah button{
+    display: flex;
+    gap: 0.6rem;
     padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 50px;
     border: none;
     background-color: #FFEB39;
@@ -701,7 +736,20 @@ body::-webkit-scrollbar {
     font-weight: 600;
     color: #06A156;
     cursor: pointer;
-    justify-content: center;
+    
+}
+
+.footer-sampah a{
+    text-decoration: none;
+}
+
+#arrow-left{
+    height: 20px;
+}
+
+#arrow-right{
+    height: 20px;
+    transform: scaleX(-1);
 }
 
 /* tanggal  */
@@ -1540,16 +1588,18 @@ ion-icon{
 
 .form-kontak{
     margin: 5rem 11rem;
+    /* margin: 5rem 5rem; */
     border-radius: 20px;
     padding: 3.5rem;
     box-shadow: 4px 4px 20px rgb(152, 151, 151);
     display: flex;
+    /* width: 60%; */
     justify-content: space-between;
 }
 
-.form-kontak div{
+/* .form-kontak div{
     align-content: center;
-}
+} */
 
 .form-kontak div h2{
     font-size: var(--text-besar);
@@ -1601,8 +1651,9 @@ ion-icon{
 
 .form-kontak img{
     position: absolute;
+    /* right: 50px;
+    top: 110%; */
     right: 50px;
-    top: 110%;
     width: 600px;
     height: 600px;
 }
